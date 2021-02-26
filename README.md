@@ -67,7 +67,7 @@ static defaultProps = {
 static propTypes = {
 	initialMonth: PropTypes.string,
 	dayHeadings: PropTypes.arrayOf(React.PropTypes.string),
-	availableDates: PropTypes.arrayOf(React.PropTypes.string),
+	blockedDates: PropTypes.arrayOf(React.PropTypes.string),
 	maxMonth: PropTypes.number,
 	buttonColor: PropTypes.string,
 	buttonContainerStyle: PropTypes.object,
