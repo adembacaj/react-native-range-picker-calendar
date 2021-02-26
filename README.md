@@ -10,30 +10,23 @@ $ npm install @adembacaj/react-native-range-picker-calendar --save
 import RangePicker from '@adembacaj/react-native-range-picker-calendar';
 
 <RangePicker
-    startDate: '13052017',
-    untilDate: '26062017',
-    onConfirm: {( startDate, untilDate ) => this.setState({ startDate, untilDate })}
+	startDate={"27022021"}
+	untilDate={"31032021"}
+	buttonColor={'red'}
+	buttonContainerStyle={{
+		borderTopWidth: 0
+		}}
+		showClose={true}
+		showReset={true}
+		showButton={true}
+		buttonLabel="Submit"
+		onClose={toggle}
+		placeHolderStart="Checkin"
+		placeHolderUntil="Checkout"
+		selectedBackgroundColor={'red'}
+		maxMonth={12}dayHeadings={['Mo', 'Tu', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']}
+		blockedDates={[ '20210315', '20210317']}
 />
-
-                        <RangePicker
-                            startDate={"27022021"}
-                            untilDate={"31032021"}
-                            buttonColor={'red'}
-                            buttonContainerStyle={{
-                                borderTopWidth: 0
-                            }}
-                            showClose={true}
-                            showReset={true}
-                            showButton={true}
-                            buttonLabel="Submit"
-                            onClose={toggle}
-                            placeHolderStart="Checkin"
-                            placeHolderUntil="Checkout"
-                            selectedBackgroundColor={'red'}
-                            maxMonth={12}
-                            dayHeadings={['Mo', 'Tu', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']}
-                            blockedDates={[ '20210315', '20210317']}
-                        />
 ```
 
 
