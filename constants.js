@@ -58,3 +58,29 @@ export const ourPropTypes = {
     showSelectionInfo: PropTypes.bool,
     showButton: PropTypes.bool,
 }
+
+export const primary = {
+    WHITE: '#ffffff',
+    BLACK: '#000000',
+};
+
+export const secondary = {
+    DARK_GREY: '#222222',
+    MEDIUM_GREY: '#484848',
+    GREY: '#838383',
+    LIGHT_GREY: '#C7C7C7',
+    SUPER_LIGHT_GREY: '#E6E6E6',
+    THIN_GREY: '#FAFAFA',
+    SKY: '#F6FBFF',
+}
+
+export const accent = {
+    ERROR: '#F04F4F',
+    LIGHT_ERROR: '#FFEDED',
+    SUCCESS: '#36D68D',
+    LIGHT_SUCCESS: '#EFFDEF',
+    WARNING: '#EFD078',
+    LIGHT_WARNING: '#FDFCEF',
+    INFORMATION: '#4684E8',
+    LIGHT_INFORMATION: '#EFF5FD',
+}

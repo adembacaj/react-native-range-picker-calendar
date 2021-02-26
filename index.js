@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Text, View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import Month from './Month';
 import moment from 'moment';
-import { CloseIcon } from '../../assets/images';
-import { fonts, accent, primary, secondary } from '../../constants';
-import { TextButton } from '../../components';
+import { accent, primary, secondary } from './constants';
 import { ourDefaultProps, ourPropTypes } from './constants';
 
 const RangePicker = (props) => {
@@ -126,8 +124,8 @@ const RangePicker = (props) => {
 			{
 				props.showClose || props.showReset ?
 					(<View style={styles.header}>
-						{props.showClose && (<TouchableOpacity onPress={props.onClose}><CloseIcon /></TouchableOpacity>)}
-						{props.showReset && <TextButton onPress={onReset} label="PASTRO" />}
+						{props.showClose && (<TouchableOpacity onPress={props.onClose}><Text>Close</Text></TouchableOpacity>)}
+						{props.showReset && <TouchableOpacity><Text>Clear</Text></TouchableOpacity>}
 					</View>)
 					:
 					null
@@ -213,13 +211,11 @@ const styles = StyleSheet.create({
 	clearText: {
 		fontSize: 14,
 		color: accent.INFORMATION,
-		fontFamily: fonts.REGULAR
 	},
 	dayHeaderText: {
 		width: "14.28%",
 		textAlign: 'center',
 		color: secondary.DARK_GREY,
-		fontFamily: fonts.REGULAR
 	},
 	dateContainer: {
 		flexDirection: 'row',
@@ -245,11 +241,9 @@ const styles = StyleSheet.create({
 		fontSize: 12,
 		color: secondary.DARK_GREY,
 		marginBottom: 2,
-		fontFamily: fonts.REGULAR
 	},
 	checkingoutDateText: {
 		fontSize: 16,
-		fontFamily: fonts.SEMIBOLD,
 		color: secondary.DARK_GREY
 	},
 	submitButton: {
@@ -263,6 +257,5 @@ const styles = StyleSheet.create({
 	buttonText: {
 		fontSize: 16,
 		color: primary.WHITE,
-		fontFamily: fonts.REGULAR
 	}
 });

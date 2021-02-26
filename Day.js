@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableWithoutFeedback, Dimensions, StyleSheet } from 'react-native';
 import moment from 'moment';
-import { fonts, accent, primary, secondary } from '../../constants';
+import { accent, primary, secondary } from './constants';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
 
@@ -13,19 +13,19 @@ const Day = (props) => {
 		//for strike line : textDecorationLine: 'line-through', textDecorationStyle: 'solid'
 		case "single":
 			dayStyle = { backgroundColor: accent.ERROR, borderRadius: 3, width: "14.28%" }
-			textDayStyle = { color: primary.WHITE, fontSize: 14, fontFamily: fonts.MEDIUM };
+			textDayStyle = { color: primary.WHITE, fontSize: 14 };
 			break;
 		case "first":
 			dayStyle = { backgroundColor: accent.ERROR, borderBottomLeftRadius: 3, borderTopLeftRadius: 3, width: "14.28%" }
-			textDayStyle = { color: primary.WHITE, fontSize: 14, fontFamily: fonts.MEDIUM };
+			textDayStyle = { color: primary.WHITE, fontSize: 14 };
 			break;
 		case "last":
 			dayStyle = { backgroundColor: accent.ERROR, borderBottomRightRadius: 3, borderTopRightRadius: 3, width: "14.28%" }
-			textDayStyle = { color: primary.WHITE, fontSize: 14, fontFamily: fonts.MEDIUM };
+			textDayStyle = { color: primary.WHITE, fontSize: 14 };
 			break;
 		case "between":
 			dayStyle = { backgroundColor: accent.LIGHT_ERROR, width: "14.28%" }
-			textDayStyle = { color: secondary.DARK_GREY, fontSize: 14, fontFamily: fonts.MEDIUM };
+			textDayStyle = { color: secondary.DARK_GREY, fontSize: 14 };
 			break;
 		case "disabled":
 		case "blockout":

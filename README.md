@@ -7,7 +7,7 @@ $ npm install @adembacaj/react-native-range-picker-calendar --save
 
 ### How to use
 ```jsx
-import RangePicker from '@adembacaj/react-native-range-picker-calendar';
+import RangePicker from '@adembacajdev/react-native-range-picker-calendar';
 
 <RangePicker
 	startDate={"27022021"}
