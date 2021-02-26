@@ -1,0 +1,32 @@
+{
+    "name": "@adembacaj/react-native-range-picker-calendar",
+    "version": "1.0.0",
+    "description": "React Native beautiful range picker calendar.",
+    "keywords": [
+      "react-native",
+      "rangepicker",
+      "range-picker",
+      "range",
+      "calendar"
+    ],
+    "homepage": "https://github.com/adembacaj/react-native-range-picker-calendar",
+    "bugs": {
+      "url": "https://github.com/adembacaj/react-native-range-picker-calendar/issues",
+      "email": "adembacajdev@gmail.com"
+    },
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/adembacaj/react-native-range-picker-calendar.git"
+    },
+    "author": "Adem Bacaj <adembacajdev@gmail.com> (https://nuse.al)",
+    "license": "MIT",
+    "private": false,
+    "engines": {
+      "node": ">=6.0.0"
+    },
+    "engineStrict": true
+  }
